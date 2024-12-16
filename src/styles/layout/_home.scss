@@ -1,0 +1,80 @@
+
+.home {
+    background-image: url(../images/main/Constanti-Portada.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center; 
+    background-color: $backcolor-home;   
+    @media (min-width: 768px) {
+      background-image: none;
+    }
+}
+
+@mixin home-hx() {
+    color:var(--color-back);    
+    letter-spacing: -1px;
+    text-align: center;
+    font-weight: 700;
+}
+
+// lletres amb el fons de pantalla
+@mixin home-h1() {
+  background-image: url(../images/main/Constanti-Portada.jpg);
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  background-position: center;
+  background-size: cover;
+  // vora de les lletres
+  -webkit-text-stroke: 1px white;  
+
+
+
+}
+section.inici {
+  background-color: $backcolor-home;
+  // en l'enllaç li treiem el subratllat
+  a {
+    text-decoration: none;
+  }
+}
+section.inici h1 {
+    @include home-hx();
+    font-size: 2.5rem;
+    @media (min-width: 576px) {
+        font-size: 8rem;
+      }
+  
+      @media (min-width: 768px) {
+        font-size: 10rem;
+        @include home-h1();
+
+      }
+  
+      @media (min-width: 1200px) {
+        font-size: 12rem;
+        &:hover{
+          // les lletres augmenten en un 10%
+          transform: scale(110%);
+        }
+      }    
+}
+
+section.inici h2{
+    @include home-hx();
+    font-size: 1.25rem;
+    @media (min-width: 576px) {
+        font-size: 4rem;
+      }
+  
+      @media (min-width: 768px) {
+        font-size: 5rem;
+      }
+  
+      @media (min-width: 1200px) {
+        font-size: 6rem;
+      }    
+}
+
+section.container {
+  margin:auto;
+}

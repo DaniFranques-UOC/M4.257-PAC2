@@ -1,0 +1,34 @@
+header {
+    // background-color: $back-color-menu;
+    // background-color: red;
+    flex-direction: column;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-left:10px;
+
+    .logo {
+        // background-color: red;
+        @include logo-dimensions();
+        transition: all .5s;
+        &:hover{
+            transform: translate(40%);
+        }
+
+    }
+    .title {
+        color:--color-font;
+        align-content: center;
+        font-size: 70px;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+        font-weight: 700;
+    }
+    @media (min-width: $mqMinWidth) {
+        flex-direction: row;
+        align-items: flex-start;
+    
+    }
+}
+

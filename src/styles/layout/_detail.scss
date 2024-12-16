@@ -1,0 +1,123 @@
+.content-detail {
+
+    @include flex-column();
+    align-items:flex-start;
+    height: 100%;
+    margin: 1rem;
+    @media (min-width: 1200px) {
+        flex-direction: row;
+    }        
+
+    // revisar per posar amplada 80%/20%
+}
+
+.monument-detail-container {
+    display: flex;
+    flex-direction: row;
+    @media (min-width: $mqMinWidth) {
+        flex-direction: column;
+    }        
+}
+
+.detail-main, .detail-titol, .detail-text {
+    padding: 10px;
+}
+
+.detail-text {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 800px) {
+        flex-direction: row;
+    }        
+    @media (min-width: 1200px) {
+        flex-direction: row;
+    }        
+
+    &-explicacio {
+        text-align: justify;
+
+        & p {
+            padding: 15px;
+        }
+    }
+}
+
+.detail-img {
+    // quan sigui visualitzat en un dispostiu de mida de pantalla coma molt mqMinWidth
+    @media (max-width: $mqMinWidth) {
+        align-self: center;
+        & figcaption {
+            display: none;
+        }
+    }        
+}
+.detail-imatge {
+    aspect-ratio: 1;
+    display: block;
+    height: auto;
+    width: 240px;
+    @media (min-width: $mqMinWidth) {
+        // border-radius: 1rem;        
+        width: 360px;
+    }        
+}
+
+.monuments-relacionats {
+    align-self: center;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.detail-altres {
+    text-align : center;
+
+    @media (min-width: $mqMinWidth) {
+        border-radius: 10rem;        
+    }        
+
+    & a {
+        text-decoration-line: none;
+        color:var(--color-font);
+    }
+
+    &-monument {
+        padding: 10px;
+        margin-bottom: 10px;
+
+        border-radius: 10px;     
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 5px #0000001a;
+        &-title {
+            padding: 5px;
+            margin-top: 1px;
+            text-align : center;
+            font-weight: bold;    
+        }
+
+        &-img img {
+            margin-bottom: 10px;
+            width: 180px;
+        
+            @media (min-width: $mqMinWidth) {
+                border-radius: 1rem;        
+            }        
+        
+            &:hover {
+                @media (min-width: $mqMinWidth) {
+                    border-radius: 10rem;  
+                    // clip-path: polygon(50% 0%, 0% 100%, 100% 100%);      
+                    
+                }  
+              }  
+        }
+        // tot el monument
+        &:hover {
+            @media (min-width: $mqMinWidth) {
+                background-color: $back-color-category-monument-hover;
+                border: 1px solid #777;
+            }  
+        }  
+    }
+        
+}
