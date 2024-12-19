@@ -6,7 +6,7 @@
     <meta name="description" content="Pàgina de categoria de Constantí">
     <title>Monuments de Constantí</title>
     <link rel="stylesheet" href="styles/main.scss" />
-    <script type="module" src="scripts/light-dark.js"></script>
+    
 </head>
 <body>
     
@@ -29,7 +29,16 @@
                     </div>
                     <div class="grid-monument-img">
                         <figure>
-                            <img src="./images/gallery/centcelles.jpg" alt="Mausoleu de Centcelles" width="240px">
+                            <img 
+                            srcset="
+                            ./images/gallery/centcelles_240w.webp 240w,
+                            ./images/gallery/centcelles_480w.webp 480w
+                            " 
+                            sizes="
+                            (max-width: 240px) 220px,
+                            (max-width: 480px) 440px
+                            "
+                            src="./images/gallery/centcelles.webp" alt="Mausoleu de Centcelles" width="240px">
                         </figure>
                     </div>
                     <div class="grid-monument-description">
@@ -45,7 +54,18 @@
                     </div>
                     <div class="grid-monument-img">
                         <figure>
-                            <img src="./images/gallery/Pont_de_les_Caixes_(Constantí)_-_3.jpg" alt="Pont de les caixes" width="240px">
+                            <img 
+                            srcset="
+                            ./images/gallery/Pont_de_les_Caixes_240w.webp 240w,
+                            ./images/gallery/Pont_de_les_Caixes_480w.webp 480w,
+                            ./images/gallery/Pont_de_les_Caixes_800w.webp 800w
+                            " 
+                            sizes="
+                            (max-width: 240px) 220px,
+                            (max-width: 480px) 440px,
+                            (max-width: 800px) 780px
+                            "
+                            src="./images/gallery/Pont_de_les_Caixes.webp" alt="Pont de les caixes" width="240px">
                         </figure>
                     </div>
                     <div class="grid-monument-description">
@@ -67,7 +87,14 @@
                    </div>
                    <div class="grid-monument-img">
                     <figure>
-                        <img src="./images/gallery/EsglesiaConstanti.jpg" alt="Esglèssia de Constantí"  height="160px">
+                        <img 
+                        srcset="
+                        ./images/gallery/EsglesiaConstanti_240w.webp 240w
+                        " 
+                        sizes="
+                        (max-width: 240px) 220px
+                        "
+                    src="./images/gallery/EsglesiaConstanti_240w.webp" alt="Esglèssia de Constantí"  height="160px">
                     </figure>
                    </div>
                    <div class="grid-monument-description">
@@ -84,7 +111,18 @@
                    </div>
                    <div class="grid-monument-img">
                     <figure>
-                        <img src="./images/gallery/640px-Mas_dels_Frares_03.jfif" alt="Mas dels Frares" width="240px">
+                        <img 
+                        srcset="
+                        ./images/gallery/640px-Mas_dels_Frares_03_240w.webp 240w,
+                        ./images/gallery/640px-Mas_dels_Frares_03_480w.webp 480w,
+                        ./images/gallery/640px-Mas_dels_Frares_03.webp 800w
+                        " 
+                        sizes="
+                        (max-width: 240px) 220px,
+                        (max-width: 480px) 440px,
+                        (max-width: 800px) 780px
+                        "
+                    src="./images/gallery/640px-Mas_dels_Frares_03_240w.webp" alt="Mas dels Frares" width="240px">
                     </figure>
                    </div>
                    <div class="grid-monument-description">
@@ -101,7 +139,20 @@
                    </div>
                    <div class="grid-monument-img">
                     <figure>
-                        <img src="./images/gallery/Constantí_Molí_Reus_IPA-12233_2406.jpg" alt="Molí de Reus" width="240px">
+                        <img 
+                        srcset="
+                        ./images/gallery/Constanti_Moli_Reus_IPA_240w.webp 240w,
+                        ./images/gallery/Constanti_Moli_Reus_IPA_480w.webp 480w,
+                        ./images/gallery/Constanti_Moli_Reus_IPA_800w.webp 800w,
+                        ./images/gallery/Constanti_Moli_Reus_IPA_1200w.webp 1200w
+                        " 
+                        sizes="
+                        (max-width: 240px) 220px,
+                        (max-width: 480px) 440px,
+                        (max-width: 800px) 780px,
+                        (max-width: 1200px) 1100px
+                        "
+                        src="./images/gallery/Constanti_Moli_Reus_IPA.webp" alt="Molí de Reus" width="240px">
                     </figure>
                    </div>
                    <div class="grid-monument-description">
@@ -119,7 +170,19 @@
                    </div>
                    <div class="grid-monument-img">
                     <figure>
-                        <img src="./images/gallery/Constantí_Sindicat_Agrícola_IPA-38473_2386.jpg" alt="Sindicat Agrícola" width="240px">
+                        <img 
+                        srcset="
+                        ./images/gallery/Sindicat_Agricola_IPA_240w.webp 240w,
+                        ./images/gallery/Sindicat_Agricola_IPA_480w.webp 480w,
+                        ./images/gallery/Sindicat_Agricola_IPA_800w.webp 800w
+                        " 
+                        sizes="
+                        (max-width: 240px) 220px,
+                        (max-width: 480px) 440px,
+                        (max-width: 800px) 780px
+                        "
+
+                        src="./images/gallery/Sindicat_Agricola_IPA_800w.webp" alt="Sindicat Agrícola" width="240px">
                     </figure>
                    </div>
                    <div class="grid-monument-description">
@@ -138,7 +201,16 @@
                    </div>
                    <div class="grid-monument-img">
                     <figure>
-                        <img src="./images/gallery/Constantí_El_Casino_IPA-38474_2383.jpg" alt="Societat El Casino" width="240px">
+                        <img 
+                        srcset="
+                        ./images/gallery/El_Casino_IPA_240w.webp 240w,
+                        ./images/gallery/El_Casino_IPA_400w.webp 480w
+                        " 
+                        sizes="
+                        (max-width: 240px) 220px,
+                        (max-width: 480px) 440px
+                        "
+                        src="./images/gallery/El_Casino_IPA_240w.webp" alt="Societat El Casino" width="240px">
                     </figure>
                    </div>
                    <div class="grid-monument-description">
@@ -156,7 +228,16 @@
                    </div>
                    <div class="grid-monument-img">
                     <figure>
-                        <img src="./images/gallery/Constantí_Molí_Constantí_IPA-12234_2400.jpg" alt="Molí de Constantí" width="240px">
+                        <img 
+                        srcset="
+                        ./images/gallery/Moli_Constanti_IPA_240w.webp 240w,
+                        ./images/gallery/Moli_Constanti_IPA_480w.webp 480w
+                        " 
+                        sizes="
+                        (max-width: 240px) 220px,
+                        (max-width: 480px) 440px
+                        "
+                        src="./images/gallery/Moli_Constanti_IPA_800w.webp" alt="Molí de Constantí" width="240px">
                     </figure>
                    </div>
                    <div class="grid-monument-description">

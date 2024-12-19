@@ -1,9 +1,9 @@
 
 .home {
-    background-image: url(../images/main/Constanti-Portada.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center; 
+    // // background-image: url(../images/main/Constanti-Portada.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center center; 
     background-color: $backcolor-home;   
     @media (min-width: 768px) {
       background-image: none;
@@ -23,19 +23,33 @@
   -webkit-text-fill-color: transparent;
   background-clip: text;
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   // vora de les lletres
   -webkit-text-stroke: 1px white;  
 
+  @media (max-width: 768px) {
+    background-image: none;
+  }
 
 
 }
+
 section.inici {
   background-color: $backcolor-home;
+  height: calc(100% - 4rem);
+
   // en l'enllaç li treiem el subratllat
   a {
     text-decoration: none;
   }
+  div.container {
+
+    @include flex-row();
+    @media (min-width: 576px) {
+      @include flex-column();
+    }
+    }
 }
 section.inici h1 {
     @include home-hx();

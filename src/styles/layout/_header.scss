@@ -1,6 +1,4 @@
 header {
-    // background-color: $back-color-menu;
-    // background-color: red;
     flex-direction: column;
     align-items: center;
     display: flex;
@@ -8,11 +6,10 @@ header {
     padding-left:10px;
 
     .logo {
-        // background-color: red;
         @include logo-dimensions();
-        transition: all .5s;
+        transition: transform 1s;
         &:hover{
-            transform: translate(40%);
+            transform: rotateY(360deg);
         }
 
     }

@@ -3,30 +3,45 @@
         <div class="grid-monument-detail">
             <div class="grid-monument-img">
                 <figure>
-                    <img class="rodo" src="./images/gallery/centcelles.jpg" alt="Mausoleu de Centcelles" width="240px">
+                    <!-- aquí ja limito a 240, per tant podria agafar la imatge de 240 -->
+                    <img class="rodo" 
+                    srcset="
+                    ./images/gallery/centcelles_240w.webp 240w,
+                    ./images/gallery/centcelles_480w.webp 480w
+                    " 
+                    sizes="
+                    (max-width: 240px) 220px,
+                    (max-width: 480px) 440px
+                    "
+                    src="./images/gallery/centcelles_240w.webp" 
+                    alt="Mausoleu de Centcelles" width="240px">
                 </figure>
             </div>
         </div>
         <div class="grid-monument-detail">
             <div class="grid-monument-img">
                 <figure>
-                    <img class="pont" src="./images/gallery/Pont_de_les_Caixes_(Constantí)_-_3.jpg" alt="Pont de les caixes" width="240px">
+                    <img class="pont" 
+                    src="./images/gallery/Pont_de_les_Caixes_240w.webp" 
+                    alt="Pont de les caixes" width="240px">
                 </figure>
             </div>
         </div>
         <div class="grid-monument-detail">
             <div class="grid-monument-img">
                 <figure>
-                    <img class="creu" src="./images/gallery/EsglesiaConstanti.jpg" alt="Esglèssia de Constantí"  height="160px">
+                    <img class="creu" src="./images/gallery/EsglesiaConstanti_240w.webp" alt="Esglèssia de Constantí"  height="160px">
                 </figure>
             </div>
         </div>
+
         <div class="grid-monument-detail">
             <div class="grid-monument-img">
                 <figure>
-                    <img src="./images/gallery/640px-Mas_dels_Frares_03.jfif" alt="Mas dels Frares" width="240px">
+                    <img src="./images/gallery/640px-Mas_dels_Frares_03_240w.webp" alt="Mas dels Frares" width="240px">
                 </figure>
             </div>
         </div>
+
     </div>
 </div>

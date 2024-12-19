@@ -19,13 +19,14 @@ body {
     background-color:var(--color-back);
     color:var(--color-font) 
 }
-// en principi no l'utilitzem, tot i que es podria posar en totes les pàgines per homogeneitzar
+
 .container {
     margin-right: auto;
     margin-left: auto;
     padding-right: 15px;
     padding-left: 15px;
     width: 100%;
+    flex-wrap: wrap;
   
     @media (min-width: 576px) {
       max-width: 540px;
@@ -69,7 +70,7 @@ h3 {
 main {
   height: 90%;
   position: relative;
-  overflow: hidden;
+  // overflow: hidden;
   @media (min-width: $mqMinWidth) {
     height: 100%;
   }        
@@ -78,22 +79,7 @@ main {
 img {
   aspect-ratio: 1;
   display: block;
+  border-radius: 10px;
   height: auto;
   width: 100%;
-}
-
-// ---- mixins
-@mixin flex-column {
-  display: flex;
-  flex-direction: column;
-}
-
-@mixin flex-row {
-  display: flex;
-  flex-direction: row;
-}
-
-@mixin logo-dimensions($reductor:1) {
-  height: auto;
-  width: calc(100px * $reductor);
 }

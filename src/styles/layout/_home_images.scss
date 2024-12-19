@@ -1,9 +1,15 @@
 .imatges_home {
+    // @include flex-row();
+
+
+    overflow: auto;
+
+    //  transformacions que fem en les imatges de la pàgina inicial al passar per sobre
     .grid {
         img {
             // per defecte la imatge és un rombe
             clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
-            // quan ens posem sobre es transforma amb un triangle
+            // per defecte si no li indiquem res quan ens posem sobre es transforma amb un triangle
             &:hover {
                 clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
             }
@@ -24,12 +30,14 @@
             clip-path: polygon(0% 100%, 20% 20%, 50% 0%, 80% 25%, 100% 100%);
         }
     }
+    
     .rodo {
         &:hover{
             // rodó
             clip-path: circle(50% at 50% 50%);
         }
     }
+    
     }
 }
 

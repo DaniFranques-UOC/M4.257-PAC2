@@ -1,0 +1,41 @@
+.svg-loader{
+  display:none;
+  // només es mostra en formats a partir de tauletes
+  @media (min-width: 769px) {
+    display:flex;
+    align-content: space-around;
+    justify-content: center;
+
+    .loader-svg{
+      position: absolute;
+      fill: none;
+      stroke-width: 5px;
+      stroke: blue;
+
+      &.bg{
+        stroke-width: 8px;
+        stroke: gray;
+      }
+      }
+
+    .animate{
+      animation:  translate 10s 0s infinite;
+    }
+        
+  }        
+
+}
+
+
+@keyframes translate {
+  0%,50%,100% {
+      transform:translate(0px,0px);
+  }
+  25% {
+    transform:translate(100px,-100px);
+}
+  75% {
+  transform:translate(-100px,100px);
+}
+}
+
