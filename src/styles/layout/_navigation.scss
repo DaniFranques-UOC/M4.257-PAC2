@@ -16,7 +16,8 @@
         justify-content: right;
         margin: 0;
         padding: 16px;
-        display: none;
+        // display: none;
+        cursor: pointer;
         @media (min-width: $mqMinWidth) {
             display: flex;
             flex-wrap: nowrap;
@@ -25,12 +26,11 @@
 
     &__link {
         display: block;
-        // color: $color-menu;
         color:--color-font;
         text-decoration: none;
         margin: 0 15px;
         padding: 10px;
-        font-size: 10px;
+        font-size: 20px;
         @media (min-width: $mqMinWidth) {
             font-size: 15px;
         }        
