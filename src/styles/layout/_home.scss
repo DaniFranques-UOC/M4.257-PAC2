@@ -1,9 +1,5 @@
 
 .home {
-    // // background-image: url(../images/main/Constanti-Portada.jpg);
-    // background-repeat: no-repeat;
-    // background-size: cover;
-    // background-position: center center; 
     background-color: $backcolor-home;   
     @media (min-width: 768px) {
       background-image: none;

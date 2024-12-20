@@ -16,6 +16,7 @@
         justify-content: right;
         margin: 0;
         padding: 16px;
+        display: none;
         @media (min-width: $mqMinWidth) {
             display: flex;
             flex-wrap: nowrap;
@@ -33,7 +34,12 @@
         @media (min-width: $mqMinWidth) {
             font-size: 15px;
         }        
-    }      
+    }
+    @media (min-width: $mqMinWidth) {
+        display: flex;
+        flex-wrap: nowrap;
+    }        
+  
 }  
 
 nav ul li {

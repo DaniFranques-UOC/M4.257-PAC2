@@ -24,8 +24,9 @@
 }
 
 .detail-text {
-    display: flex;
-    flex-direction: column;
+    @include flex-column();
+    flex-wrap: wrap;
+    justify-content: space-around;
     @media (min-width: 800px) {
         flex-direction: row;
     }        
@@ -35,6 +36,7 @@
 
     &-explicacio {
         text-align: justify;
+        margin: 1px 10%;
 
         & p {
             padding: 15px;
@@ -55,10 +57,11 @@
     aspect-ratio: 1;
     display: block;
     height: auto;
-    width: 240px;
+    // width: 240px;
     @media (min-width: $mqMinWidth) {
-        // border-radius: 1rem;        
+        border-radius: 1rem;        
         width: 360px;
+        width: auto;
     }        
 }
 
@@ -105,9 +108,7 @@
         
             &:hover {
                 @media (min-width: $mqMinWidth) {
-                    border-radius: 10rem;  
-                    // clip-path: polygon(50% 0%, 0% 100%, 100% 100%);      
-                    
+                    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);      
                 }  
               }  
         }
